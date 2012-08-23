@@ -37,5 +37,5 @@ else
     
 end
 
-[yls yW yF xls xnn mtx] = morf_bpdn_R(ymm, 'Daubechies',10, 0);
+[yls yW yF xls xnn mtx] = morf_bpdn_R(x, 'Daubechies',10, 0);
 
