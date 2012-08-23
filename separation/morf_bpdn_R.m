@@ -17,12 +17,6 @@ function [yls yW yD xls xnn mtx] = morf_bpdn_R(y, fam, cls, lam, figs)
 % size wavelets as it was found that they often give a mutual
 % coherence that is tooo high
 
-if ~exist('pull_single')
-    addpath('../mpi_process')
-end
-if ~exist('opClass')
-    addpath('/shared/users/dstrauss/soft/spotbox-v1.0')
-end
 
 % wavelets work best with zero mean data
 [n m] = size(y);
