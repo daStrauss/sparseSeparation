@@ -78,7 +78,7 @@ x = zeros(N,m);
 % selection of zero coefficients
 % figure(30); clf
 % for ch  = 1:m
-disp(['original card ' num2str(card(xnn,1e-13))])
+disp(['Relative cardinality of solution = ' num2str(card(xnn,1e-13)/length(y))])
 
 doLSFinal = false;
 
