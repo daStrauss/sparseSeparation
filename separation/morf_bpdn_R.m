@@ -1,4 +1,4 @@
-function [yls yW yD xls xnn mtx] = morf_bpdn_R(y, fam, cls, lam, figs)
+function [yls yW yD xls xnn mtx] = morf_bpdn_R(y, fam, cls, figs)
 % [yls yW yD yS xp] = morf_bpdn_R(y, fam, cls, lam, figs)
 % 
 % a function that will do my flavor of wavelet basis pursuit
@@ -137,9 +137,7 @@ if figs
     subplot(224)
     plot(1:n, y(:,1),  1:n, yls(:,1))
     title('final outputs')
-    legend('original', 'bpdn', 'polishing')
-    
-    
+    legend('original', 'bpdn', 'polishing')    
 end
 
 mtx.A = A;

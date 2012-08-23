@@ -1,11 +1,10 @@
-function [xs rzd p] = fista(b, A, c, lam, nit, xo)
-% function [xs rzd] = fista(b, A, c, lam, nit,xo);
+function [xs rzd p] = fista(b, A, c, nit, xo)
+% function [xs rzd] = fista(b, A, c, nit,xo);
 % solve by fast ista
 % inputs: 
 % b: rhs , what we want to match in ||b-Ax||
 % A: the matrix A, can be a set of spot operators
 % c: lipschitz constant for A
-% lam: threshold parameter
 % nit: number of iterations
 % xo: known solution (if it exists)
 % output: xs - final solution
@@ -29,7 +28,7 @@ for iter = 1:nit
     loom = 2.5*median(abs(zsx))/0.6745;
     hala(iter) = loom;
     xs = stv(p + (1/c)*(zsx),loom/c); 
-    %save for later
+    % save for later
     to = tn;
     %update t
     tn = (1+sqrt(1+4*to^2))/2;
@@ -40,7 +39,7 @@ for iter = 1:nit
     % normally at 1e-7;
     
     if (iter > 5) && (abs(rzd(iter) - rzd(iter-1)) < 2e-3)
-        disp(['I done early! - ' num2str(iter) ' iterations'])
+        % disp(['I finished fista iterations early! (this is good) - I only did ' num2str(iter) ' iterations'])
         break
     end
     
@@ -49,10 +48,13 @@ end
 
 disp(['Fista evaluation time = ' num2str(toc(le_go))])
 disp(['Fista iterations ' num2str(iter)])
-disp(['Final rzd ' num2str(rzd(iter)-rzd(iter-1))])
+disp(['Final residual ' num2str(rzd(iter)-rzd(iter-1))])
 
-figure(8765);
-line(1:length(hala), hala)
+% some plots to make sure that it is finishing its iterations.
+% figure(8765);
+% line(1:length(hala), hala)
+% title('value of thresholding parameter')
 
-figure(8373);
-line(1:length(rzd), mse)
+% figure(8373);
+% line(1:length(rzd), mse)
+% title('change in residual')
