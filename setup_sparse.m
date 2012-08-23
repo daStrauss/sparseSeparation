@@ -7,9 +7,9 @@ disp('My tools ' )
 disp('Enjoy ')
 
 if isunix
-    ss = '/'
+    ss = '/';
 elseif ispc
-    ss = '\'
+    ss = '\';
 else
     disp('What type of computer are you using?')
 end
