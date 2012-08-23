@@ -2,8 +2,6 @@ function wavelab_setup
 %  WavePath -- initialize path to include WaveLab
 %
 
-dd = pwd
-
 fprintf('Welcome to WaveLab v 850 \n');
 disp('Setting Global Variables');
 %
@@ -128,33 +126,34 @@ path(p);
 disp('Pathnames Successfully Set');
 clear p pref post
 
-%
-fprintf('global WAVELABPATH = "%s"\n',              WAVELABPATH)
-fprintf('global PATHNAMESEPARATOR = "%s"; ',  PATHNAMESEPARATOR)
-fprintf('global MATLABVERSION = %g\n',            MATLABVERSION)
-fprintf('global PREFERIMAGEGRAPHICS = %g\n',PREFERIMAGEGRAPHICS)
-fprintf('WaveLab v 802 Setup Complete\n\n')
-fprintf('Available Demos - Figures from the following papers:\n')
-fprintf('  AdaptDemo  - ``Adapting to Unknown Smoothness via Wavelet Shrinkage''''\n')
-fprintf('  AsympDemo  - ``Wavelet Shrinkage: Asymptopia?''''\n')
-fprintf('  BlockyDemo - ``Smooth Wavelet Decompositions with Blocky Coefficient Kernels''''\n')
-fprintf('  CorrelDemo - ``Wavelet Threshold Estimators for Data with Correlated Noise''''\n')
-fprintf('  IdealDemo  - ``Ideal Spatial Adaptation via Wavelet Shrinkage''''\n')
-fprintf('  MESDemo    - ``Minimum Entropy Segmentation''''\n')
-fprintf('  MIPTDemo  - ``Nonlinear Wavelet Transforms based on Median-Interpolaton''''\n')
-fprintf('  RiskDemo  - ``Exact Risk Analysis of Wavelet Regression''''\n')
-fprintf('  SCDemo     - ``Nonlinear Wavelet Methods for Recovery of Signals, Densities\n')
-fprintf('                  and Spectra from Indirect and Noisy Data''''\n')
-fprintf('  CSpinDemo   - ``Translation-Invariant De-Noising''''\n')
-fprintf('  TourDemo   - ``Wavelet Shrinkage and W.V.D. -- A Ten-Minute Tour''''\n')
-fprintf('  VdLDemo    - ``WaveLab and Reproducible Research''''\n\n')
-fprintf('Available Workouts:\n')
-fprintf('  BBWorkout  - Workouts for Best Basis\n')
-fprintf('  MPWorkout  - Workouts for Matching Pursuit\n')
-fprintf('  MultiFrac  - Workouts for Continuous Wavelet Transform\n')
-fprintf('  Toons      - The Cartoon Guide to Wavelets\n\n')
-fprintf('Available Book(s):\n')
-fprintf('  WaveTour   - ``WaveLet Tour of Signal Processing''''\n\n')
+run([pwd PATHNAMESEPARATOR 'InstallMEX'])
+% %
+% fprintf('global WAVELABPATH = "%s"\n',              WAVELABPATH)
+% fprintf('global PATHNAMESEPARATOR = "%s"; ',  PATHNAMESEPARATOR)
+% fprintf('global MATLABVERSION = %g\n',            MATLABVERSION)
+% fprintf('global PREFERIMAGEGRAPHICS = %g\n',PREFERIMAGEGRAPHICS)
+% fprintf('WaveLab v 802 Setup Complete\n\n')
+% fprintf('Available Demos - Figures from the following papers:\n')
+% fprintf('  AdaptDemo  - ``Adapting to Unknown Smoothness via Wavelet Shrinkage''''\n')
+% fprintf('  AsympDemo  - ``Wavelet Shrinkage: Asymptopia?''''\n')
+% fprintf('  BlockyDemo - ``Smooth Wavelet Decompositions with Blocky Coefficient Kernels''''\n')
+% fprintf('  CorrelDemo - ``Wavelet Threshold Estimators for Data with Correlated Noise''''\n')
+% fprintf('  IdealDemo  - ``Ideal Spatial Adaptation via Wavelet Shrinkage''''\n')
+% fprintf('  MESDemo    - ``Minimum Entropy Segmentation''''\n')
+% fprintf('  MIPTDemo  - ``Nonlinear Wavelet Transforms based on Median-Interpolaton''''\n')
+% fprintf('  RiskDemo  - ``Exact Risk Analysis of Wavelet Regression''''\n')
+% fprintf('  SCDemo     - ``Nonlinear Wavelet Methods for Recovery of Signals, Densities\n')
+% fprintf('                  and Spectra from Indirect and Noisy Data''''\n')
+% fprintf('  CSpinDemo   - ``Translation-Invariant De-Noising''''\n')
+% fprintf('  TourDemo   - ``Wavelet Shrinkage and W.V.D. -- A Ten-Minute Tour''''\n')
+% fprintf('  VdLDemo    - ``WaveLab and Reproducible Research''''\n\n')
+% fprintf('Available Workouts:\n')
+% fprintf('  BBWorkout  - Workouts for Best Basis\n')
+% fprintf('  MPWorkout  - Workouts for Matching Pursuit\n')
+% fprintf('  MultiFrac  - Workouts for Continuous Wavelet Transform\n')
+% fprintf('  Toons      - The Cartoon Guide to Wavelets\n\n')
+% fprintf('Available Book(s):\n')
+% fprintf('  WaveTour   - ``WaveLet Tour of Signal Processing''''\n\n')
 
 %
 % the next statement leaves items in global workspace
