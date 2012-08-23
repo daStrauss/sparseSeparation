@@ -14,6 +14,6 @@ else
     disp('What type of computer are you using?')
 end
 
-run([pwd ss 'WaveLab850' ss 'wavelab_setup.m'])
+run([pwd ss 'Wavelab850' ss 'wavelab_setup.m'])
 addpath([pwd ss 'spotbox-v1.0'])
 addpath([pwd ss 'separation'])
