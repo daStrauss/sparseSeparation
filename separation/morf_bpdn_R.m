@@ -53,7 +53,7 @@ x = zeros(N,m);
 % I wish I could use SPOT to concatonate!
 % [xns cpl] = bpdn_iter_sth(Bt,y,lam,x);
 % [xnn cpn] = nesterov_bpdn(A,y,lam,x,200);
-[xnn cpn] = fista(y,A,3,lam,450,x);
+[xnn cpn] = fista(y,A,3,450,x);
 % figure(10009);
 % plot(cpn)
 
