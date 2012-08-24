@@ -17,6 +17,9 @@ function [yls yW yD xls xnn mtx] = morf_bpdn_R(y, fam, cls, figs)
 % size wavelets as it was found that they often give a mutual
 % coherence that is tooo high
 
+%   Copyright 2012, David Strauss
+%   See the file COPYING.txt for full copyright information.
+
 
 % wavelets work best with zero mean data
 [n m] = size(y);

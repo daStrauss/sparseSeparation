@@ -8,6 +8,9 @@ function  res = ortwv(n, fam, ord)
 % ord = family order
 % think of this as a matrix A (n,N) that implements the wavelet decomposition
 
+%   Copyright 2012, David Strauss
+%   See the file COPYING.txt for full copyright information.
+
 if ~exist('FWT_PO')
     run('/shared/users/dstrauss/soft/Wavelab850/WavePath.m')
 end

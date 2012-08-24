@@ -5,3 +5,6 @@ function sparseSeparation()
 % I suggest "FWSeparate" to start.
 % 
 % Author: David Strauss (2012)
+
+%   Copyright 2012, David Strauss
+%   See the file COPYING.txt for full copyright information.

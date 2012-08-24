@@ -1,4 +1,7 @@
 function res = mtimes(A,x)
+
+%   Copyright 2012, David Strauss
+%   See the file COPYING.txt for full copyright information.
 if length(x) ~= A.N
     disp('Wrong size of x')
 else

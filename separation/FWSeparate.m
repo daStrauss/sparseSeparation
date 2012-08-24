@@ -25,6 +25,10 @@ function [yW yF] = FWSeparate(x, varargin)
 % Haar       | 1
 % 
 
+
+%   Copyright 2012, David Strauss
+%   See the file COPYING.txt for full copyright information.
+
 n = floor(log2(length(x)));
 x = x(1:(2^n));
 

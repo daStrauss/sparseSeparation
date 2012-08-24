@@ -17,3 +17,7 @@ end
 run([pwd ss 'Wavelab850' ss 'wavelab_setup.m'])
 addpath([pwd ss 'spotbox-v1.0'])
 addpath([pwd ss 'separation'])
+
+
+%   Copyright 2012, David Strauss
+%   See the file COPYING.txt for full copyright information.
