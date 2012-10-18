@@ -88,62 +88,33 @@ if strcmp(R,'') + strcmp(R,'Yes') | strcmp(R,'yes') | strcmp(R,'y') | strcmp(R,'
     !mv LMIRefineSeq.mex* ../Papers/MIPT
     !mv MedRefineSeq.mex* ../Papers/MIPT
   elseif isPC,
-    dos('move CPAnalysis.dll ..\Packets\One-D');
-    dos('move WPAnalysis.dll ..\Packets\One-D');
-    dos('move FWT_PO.dll ..\Orthogonal');
-    dos('move FWT2_PO.dll ..\Orthogonal');
-    dos('move IWT_PO.dll ..\Orthogonal');
-    dos('move IWT2_PO.dll ..\Orthogonal');
-    dos('move UpDyadHi.dll ..\Orthogonal');
-    dos('move UpDyadLo.dll ..\Orthogonal');
-    dos('move DownDyadHi.dll ..\Orthogonal');
-    dos('move DownDyadLo.dll ..\Orthogonal');
-    dos('move dct_iv.dll ..\Packets\One-D');
-    dos('move FCPSynthesis.dll ..\Pursuit');
-    dos('move FWPSynthesis.dll ..\Pursuit');
-    dos('move dct_ii.dll ..\Meyer');
-    dos('move dst_ii.dll ..\Meyer');
-    dos('move dct_iii.dll ..\Meyer');
-    dos('move dst_iii.dll ..\Meyer');
-    dos('move FWT_PBS.dll ..\Biorthogonal');
-    dos('move IWT_PBS.dll ..\Biorthogonal');
-    dos('move FWT_TI.dll ..\Invariant');
-    dos('move IWT_TI.dll ..\Invariant');
-    dos('move FMIPT.dll ..\Median ');
-    dos('move IMIPT.dll ..\Median');
-    dos('move FAIPT.dll ..\Papers\MIPT');
-    dos('move IAIPT.dll ..\Papers\MIPT');
-    dos('move LMIRefineSeq.dll ..\Papers\MIPT');
-    dos('move MedRefineSeq.dll ..\Papers\MIPT');
-  elseif isMAC,
-    acopy('CPAnalysis.mex', '::Packets:One-D')
-    acopy('WPAnalysis.mex' ,'::Packets:One-D')
-    acopy('FWT_PO.mex' ,'::Orthogonal')
-    acopy('FWT2_PO.mex' ,'::Orthogonal')
-    acopy('IWT_PO.mex' ,'::Orthogonal')
-    acopy('IWT2_PO.mex' ,'::Orthogonal')
-    acopy('UpDyadHi.mex' ,'::Orthogonal')
-    acopy('UpDyadLo.mex' ,'::Orthogonal')
-    acopy('DownDyadHi.mex' ,'::Orthogonal')
-    acopy('DownDyadLo.mex' ,'::Orthogonal')
-    acopy('dct_iv.mex' ,'::Packets:One-D')
-    acopy('FCPSynthesis.mex' ,'::Pursuit')
-    acopy('FWPSynthesis.mex' ,'::Pursuit')
-    acopy('FastAllSeg.mex' ,'::Papers:MinEntSeg')
-    acopy('dct_ii.mex' ,'::Meyer')
-    acopy('dst_ii.mex' ,'::Meyer')
-    acopy('dct_iii.mex' ,'::Meyer')
-    acopy('dst_iii.mex' ,'::Meyer')
-    acopy('FWT_PBS.mex' ,'::Biorthogonal')
-    acopy('IWT_PBS.mex' ,'::Biorthogonal')
-    acopy('FWT_TI.mex' ,'::Invariant')
-    acopy('IWT_TI.mex' ,'::Invariant')
-    acopy('FMIPT.mex' ,'::Median')
-    acopy('IMIPT.mex' ,'::Median')
-    acopy('FAIPT.mex' ,'::Papers:MIPT')
-    acopy('IAIPT.mex' ,'::Papers:MIPT')
-    acopy('LMIRefineSeq.mex' ,'::Papers:MIPT')
-    acopy('MedRefineSeq.mex' ,'::Papers:MIPT')
+    !move CPAnalysis.mex* ../Packets/One-D
+    !move WPAnalysis.mex* ../Packets/One-D
+    !move FWT_PO.mex* ../Orthogonal
+    !move FWT2_PO.mex* ../Orthogonal
+    !move IWT_PO.mex* ../Orthogonal
+    !move IWT2_PO.mex* ../Orthogonal
+    !move UpDyadHi.mex* ../Orthogonal
+    !move UpDyadLo.mex* ../Orthogonal
+    !move DownDyadHi.mex* ../Orthogonal
+    !move DownDyadLo.mex* ../Orthogonal
+    !move dct_iv.mex* ../Packets/One-D
+    !move FCPSynthesis.mex* ../Pursuit
+    !move FWPSynthesis.mex* ../Pursuit
+    !move dct_ii.mex* ../Meyer
+    !move dst_ii.mex* ../Meyer
+    !move dct_iii.mex* ../Meyer
+    !move dst_iii.mex* ../Meyer
+    !move FWT_PBS.mex* ../Biorthogonal
+    !move IWT_PBS.mex* ../Biorthogonal
+    !move FWT_TI.mex* ../Invariant
+    !move IWT_TI.mex* ../Invariant
+    !move FMIPT.mex* ../Median 
+    !move IMIPT.mex* ../Median
+    !move FAIPT.mex* ../Papers/MIPT
+    !move IAIPT.mex* ../Papers/MIPT
+    !move LMIRefineSeq.mex* ../Papers/MIPT
+    !move MedRefineSeq.mex* ../Papers/MIPT
   end
 end
 end

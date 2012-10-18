@@ -20,10 +20,11 @@ if isunix,
     MATLABPATHSEPARATOR = ':';
 elseif ispc
     PATHNAMESEPARATOR = '\';	  
-    WAVELABPATH = [cd PATHNAMESEPARATOR];  
+    WAVELABPATH = [pwd, PATHNAMESEPARATOR];
+    % WAVELABPATH = [cd PATHNAMESEPARATOR];  
     MATLABPATHSEPARATOR = ';';
-    WAVELABPATH=strcat(matlabroot,'\toolbox\Wavelab850\')
-    disp('Warning: I have not tested this on windows')
+    % WAVELABPATH=strcat(matlabroot,'\toolbox\Wavelab850\')
+    disp('Warning: I have not extensively tested this on windows')
 else
     disp('I don*t recognize this computer; ')
     disp('Pathnames not set; solution: edit wavelab_setup.m')
