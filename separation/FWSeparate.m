@@ -33,7 +33,7 @@ n = floor(log2(length(x)));
 x = x(1:(2^n));
 
 if nargin > 1
-    fam = varargin{1}
+    family = varargin{1}
     class = varargin{2}
 else
     family = 'Daubechies';
@@ -41,5 +41,5 @@ else
     
 end
 
-[yls yW yF xls xnn mtx] = morf_bpdn_R(x, 'Daubechies',10, 0);
+[yls yW yF xls xnn mtx] = morf_bpdn_R(x, family,class, 0);
 
